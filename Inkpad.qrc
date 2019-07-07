@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="images">
+    <file>icons/Very-Basic-Undo-icon.png</file>
+    <file>icons/Very-Basic-Reload-icon.png</file>
+    <file>icons/Very-Basic-Redo-icon.png</file>
+    <file>icons/search-icon.png</file>
+    <file>icons/Folder-icon.png</file>
+    <file>icons/Document-new-icon.png</file>
+    <file>icons/Designcontest-Vintage-Ink-Pen-2.ico</file>
+    <file>icons/Actions-document-save-icon.png</file>
+  </qresource>
+</RCC>
