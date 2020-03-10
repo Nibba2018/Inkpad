@@ -30,7 +30,7 @@ class Editor:
                 subm.add_command(label='Exit',command=self.exit)
 
                 #icon
-                master.iconbitmap('Designcontest-Vintage-Ink-Pen-2.ico')
+                #master.iconbitmap('Designcontest-Vintage-Ink-Pen-2.ico')
                 if os.path.isdir("Saved-Files"):
                         pass
                 else:
@@ -43,7 +43,7 @@ class Editor:
         def open(self,i=0):
                 opn=Tk()
                 opn.title('Open')
-                opn.iconbitmap('Designcontest-Vintage-Ink-Pen-2.ico')
+                #opn.iconbitmap('Designcontest-Vintage-Ink-Pen-2.ico')
                 l=Label(opn,text="File Name:")
                 l.pack(side=LEFT)
                 name=Entry(opn)
@@ -64,7 +64,7 @@ class Editor:
                         l=Label(sve,text="File Name:")
                         l.pack(side=LEFT)
                         name=Entry(sve)
-                        sve.iconbitmap('Designcontest-Vintage-Ink-Pen-2.ico')
+                        #sve.iconbitmap('Designcontest-Vintage-Ink-Pen-2.ico')
                         def setn(l):
                                 self.name=name.get()
                                 f=open(os.path.join("./Saved-Files",self.name),'w')
@@ -89,7 +89,7 @@ class Editor:
                 win.title("Saved Files:-")
                 l=Label(win,text=Flist)
                 l.pack(fill=BOTH,padx=10,pady=10)
-                win.iconbitmap('Designcontest-Vintage-Ink-Pen-2.ico')
+                #win.iconbitmap(r'/media/nibba/Coding/Github/Inkpad/Designcontest-Vintage-Ink-Pen-2.ico')
                 
         def exit(self):
                 self.master.destroy()
