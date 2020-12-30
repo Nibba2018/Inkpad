@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>mainWindow</class>
- <widget class="QMainWindow" name="mainWindow">
+ <class>main_window</class>
+ <widget class="QMainWindow" name="main_window">
   <property name="windowModality">
    <enum>Qt::NonModal</enum>
   </property>
@@ -23,7 +23,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="QFrame" name="frame_2">
+     <widget class="QFrame" name="tool_frame">
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
@@ -32,7 +32,7 @@
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QToolButton" name="toolButton">
+        <widget class="QToolButton" name="tool_newfile">
          <property name="text">
           <string>New File</string>
          </property>
@@ -52,7 +52,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QToolButton" name="toolButton_2">
+        <widget class="QToolButton" name="tool_openfile">
          <property name="text">
           <string>Open File</string>
          </property>
@@ -75,7 +75,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QToolButton" name="toolButton_3">
+        <widget class="QToolButton" name="tool_savefile">
          <property name="text">
           <string>Save File</string>
          </property>
@@ -99,7 +99,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QToolButton" name="toolButton_4">
+        <widget class="QToolButton" name="tool_undo">
          <property name="text">
           <string>Undo</string>
          </property>
@@ -116,7 +116,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QToolButton" name="toolButton_5">
+        <widget class="QToolButton" name="tool_redo">
          <property name="text">
           <string>Redo</string>
          </property>
@@ -133,7 +133,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QToolButton" name="toolButton_6">
+        <widget class="QToolButton" name="tool_refresh">
          <property name="text">
           <string>Reload</string>
          </property>
@@ -157,7 +157,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QToolButton" name="toolButton_7">
+        <widget class="QToolButton" name="tool_search">
          <property name="text">
           <string>Find</string>
          </property>
@@ -197,7 +197,7 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QTabWidget" name="tabWidget">
+     <widget class="QTabWidget" name="content_tab">
       <property name="tabPosition">
        <enum>QTabWidget::North</enum>
       </property>
@@ -228,7 +228,7 @@
        </attribute>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="0" column="0" colspan="2">
-         <widget class="QPlainTextEdit" name="plainTextEdit">
+         <widget class="QPlainTextEdit" name="content_edit">
           <property name="cursor" stdset="0">
            <cursorShape>IBeamCursor</cursorShape>
           </property>
@@ -264,7 +264,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>30</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
