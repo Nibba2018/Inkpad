@@ -17,7 +17,7 @@
    <string>Inkpad</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="Inkpad.qrc">
+   <iconset resource="main.qrc">
     <normaloff>:/images/icons/Designcontest-Vintage-Ink-Pen-2.ico</normaloff>:/images/icons/Designcontest-Vintage-Ink-Pen-2.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -37,7 +37,7 @@
           <string>New File</string>
          </property>
          <property name="icon">
-          <iconset resource="Inkpad.qrc">
+          <iconset resource="main.qrc">
            <normaloff>:/images/icons/Document-new-icon.png</normaloff>:/images/icons/Document-new-icon.png</iconset>
          </property>
          <property name="iconSize">
@@ -57,7 +57,7 @@
           <string>Open File</string>
          </property>
          <property name="icon">
-          <iconset resource="Inkpad.qrc">
+          <iconset resource="main.qrc">
            <normaloff>:/images/icons/Folder-icon.png</normaloff>:/images/icons/Folder-icon.png</iconset>
          </property>
          <property name="iconSize">
@@ -80,7 +80,7 @@
           <string>Save File</string>
          </property>
          <property name="icon">
-          <iconset resource="Inkpad.qrc">
+          <iconset resource="main.qrc">
            <normaloff>:/images/icons/Actions-document-save-icon.png</normaloff>:/images/icons/Actions-document-save-icon.png</iconset>
          </property>
          <property name="iconSize">
@@ -104,7 +104,7 @@
           <string>Undo</string>
          </property>
          <property name="icon">
-          <iconset resource="Inkpad.qrc">
+          <iconset resource="main.qrc">
            <normaloff>:/images/icons/Very-Basic-Undo-icon.png</normaloff>:/images/icons/Very-Basic-Undo-icon.png</iconset>
          </property>
          <property name="iconSize">
@@ -121,7 +121,7 @@
           <string>Redo</string>
          </property>
          <property name="icon">
-          <iconset resource="Inkpad.qrc">
+          <iconset resource="main.qrc">
            <normaloff>:/images/icons/Very-Basic-Redo-icon.png</normaloff>:/images/icons/Very-Basic-Redo-icon.png</iconset>
          </property>
          <property name="iconSize">
@@ -138,7 +138,7 @@
           <string>Reload</string>
          </property>
          <property name="icon">
-          <iconset resource="Inkpad.qrc">
+          <iconset resource="main.qrc">
            <normaloff>:/images/icons/Very-Basic-Reload-icon.png</normaloff>:/images/icons/Very-Basic-Reload-icon.png</iconset>
          </property>
          <property name="iconSize">
@@ -162,7 +162,7 @@
           <string>Find</string>
          </property>
          <property name="icon">
-          <iconset resource="Inkpad.qrc">
+          <iconset resource="main.qrc">
            <normaloff>:/images/icons/search-icon.png</normaloff>:/images/icons/search-icon.png</iconset>
          </property>
          <property name="iconSize">
@@ -378,7 +378,7 @@
   </action>
  </widget>
  <resources>
-  <include location="Inkpad.qrc"/>
+  <include location="main.qrc"/>
  </resources>
  <connections/>
 </ui>
