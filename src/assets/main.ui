@@ -23,181 +23,10 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="QFrame" name="tool_frame">
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QToolButton" name="tool_newfile">
-         <property name="text">
-          <string>New File</string>
-         </property>
-         <property name="icon">
-          <iconset resource="main.qrc">
-           <normaloff>:/images/icons/Document-new-icon.png</normaloff>:/images/icons/Document-new-icon.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>32</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="toolButtonStyle">
-          <enum>Qt::ToolButtonIconOnly</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QToolButton" name="tool_openfile">
-         <property name="text">
-          <string>Open File</string>
-         </property>
-         <property name="icon">
-          <iconset resource="main.qrc">
-           <normaloff>:/images/icons/Folder-icon.png</normaloff>:/images/icons/Folder-icon.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>32</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="checkable">
-          <bool>false</bool>
-         </property>
-         <property name="toolButtonStyle">
-          <enum>Qt::ToolButtonIconOnly</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QToolButton" name="tool_savefile">
-         <property name="text">
-          <string>Save File</string>
-         </property>
-         <property name="icon">
-          <iconset resource="main.qrc">
-           <normaloff>:/images/icons/Actions-document-save-icon.png</normaloff>:/images/icons/Actions-document-save-icon.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>32</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="line">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QToolButton" name="tool_undo">
-         <property name="text">
-          <string>Undo</string>
-         </property>
-         <property name="icon">
-          <iconset resource="main.qrc">
-           <normaloff>:/images/icons/Very-Basic-Undo-icon.png</normaloff>:/images/icons/Very-Basic-Undo-icon.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>32</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QToolButton" name="tool_redo">
-         <property name="text">
-          <string>Redo</string>
-         </property>
-         <property name="icon">
-          <iconset resource="main.qrc">
-           <normaloff>:/images/icons/Very-Basic-Redo-icon.png</normaloff>:/images/icons/Very-Basic-Redo-icon.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>32</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QToolButton" name="tool_refresh">
-         <property name="text">
-          <string>Reload</string>
-         </property>
-         <property name="icon">
-          <iconset resource="main.qrc">
-           <normaloff>:/images/icons/Very-Basic-Reload-icon.png</normaloff>:/images/icons/Very-Basic-Reload-icon.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>32</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="line_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QToolButton" name="tool_search">
-         <property name="text">
-          <string>Find</string>
-         </property>
-         <property name="icon">
-          <iconset resource="main.qrc">
-           <normaloff>:/images/icons/search-icon.png</normaloff>:/images/icons/search-icon.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>32</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="line_3">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>410</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item row="1" column="0">
      <widget class="QTabWidget" name="content_tab">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="tabPosition">
        <enum>QTabWidget::North</enum>
       </property>
@@ -306,22 +135,64 @@
    <addaction name="menuSearch"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="actionFind"/>
+  </widget>
   <action name="actionNew">
+   <property name="icon">
+    <iconset resource="main.qrc">
+     <normaloff>:/images/icons/Document-new-icon.png</normaloff>:/images/icons/Document-new-icon.png</iconset>
+   </property>
    <property name="text">
     <string>New</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
   </action>
   <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="main.qrc">
+     <normaloff>:/images/icons/Folder-icon.png</normaloff>:/images/icons/Folder-icon.png</iconset>
+   </property>
    <property name="text">
     <string>Open</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
   </action>
   <action name="actionSave">
+   <property name="icon">
+    <iconset resource="main.qrc">
+     <normaloff>:/images/icons/Actions-document-save-icon.png</normaloff>:/images/icons/Actions-document-save-icon.png</iconset>
+   </property>
    <property name="text">
     <string>Save</string>
    </property>
   </action>
   <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="main.qrc">
+     <normaloff>:/images/icons/Actions-document-save-icon.png</normaloff>:/images/icons/Actions-document-save-icon.png</iconset>
+   </property>
    <property name="text">
     <string>Save As...</string>
    </property>
@@ -337,13 +208,27 @@
    </property>
   </action>
   <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="main.qrc">
+     <normaloff>:/images/icons/Very-Basic-Undo-icon.png</normaloff>:/images/icons/Very-Basic-Undo-icon.png</iconset>
+   </property>
    <property name="text">
     <string>Undo</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
   </action>
   <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="main.qrc">
+     <normaloff>:/images/icons/Very-Basic-Redo-icon.png</normaloff>:/images/icons/Very-Basic-Redo-icon.png</iconset>
+   </property>
    <property name="text">
     <string>Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
    </property>
   </action>
   <action name="actionCut">
@@ -367,11 +252,19 @@
    </property>
   </action>
   <action name="actionFind">
+   <property name="icon">
+    <iconset resource="main.qrc">
+     <normaloff>:/images/icons/search-icon.png</normaloff>:/images/icons/search-icon.png</iconset>
+   </property>
    <property name="text">
     <string>Find</string>
    </property>
   </action>
   <action name="actionReplace">
+   <property name="icon">
+    <iconset resource="main.qrc">
+     <normaloff>:/images/icons/search-icon.png</normaloff>:/images/icons/search-icon.png</iconset>
+   </property>
    <property name="text">
     <string>Replace</string>
    </property>
