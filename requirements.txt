@@ -1,1 +1,5 @@
+# Default
 PyQt5
+
+# Testing
+pytest-qt
