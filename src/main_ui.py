@@ -161,6 +161,7 @@ class Ui_main_window(object):
         self.actionOpen.setText(_translate("main_window", "Open"))
         self.actionOpen.setShortcut(_translate("main_window", "Ctrl+O"))
         self.actionSave.setText(_translate("main_window", "Save"))
+        self.actionSave.setShortcut(_translate("main_window", "Ctrl+S"))
         self.actionSave_As.setText(_translate("main_window", "Save As..."))
         self.actionPrint.setText(_translate("main_window", "Print"))
         self.actionQuit.setText(_translate("main_window", "Quit"))

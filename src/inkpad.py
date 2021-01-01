@@ -9,6 +9,7 @@ class Inkpad(QtWidgets.QMainWindow, Ui_main_window):
         self.actionNew.triggered.connect(self.new_file_event)
         self.actionOpen.triggered.connect(self.open_file_event)
         self.actionSave.triggered.connect(self.save_file_event)
+        self.content_tab.tabCloseRequested.connect(self.remove_tab)
 
     def new_file_event(self):
         new_tab = QtWidgets.QWidget()
@@ -52,6 +53,12 @@ class Inkpad(QtWidgets.QMainWindow, Ui_main_window):
 
             self.content_tab.setTabText(self.content_tab.currentIndex(),
                                         file_path.split('/')[-1])
+
+    def remove_tab(self, index):
+        widget = self.content_tab.widget(index)
+        if widget is not None:
+            widget.deleteLater()
+        self.content_tab.removeTab(index)
 
 
 if __name__ == "__main__":
