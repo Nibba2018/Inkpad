@@ -18,11 +18,6 @@ class Inkpad(QtWidgets.QMainWindow, Ui_main_window):
         new_text_edit.viewport().setProperty("cursor",
                                              QtGui.QCursor(QtCore.Qt
                                                            .IBeamCursor))
-        new_text_edit.setMouseTracking(False)
-        new_text_edit.setDocumentTitle("")
-        new_text_edit.setPlainText("")
-        new_text_edit.setOverwriteMode(False)
-        new_text_edit.setBackgroundVisible(False)
         new_text_edit.setPlaceholderText("Start Typing...")
         gridLayout.addWidget(new_text_edit, 0, 0, 1, 2)
         self.content_tab.addTab(new_tab, "Untitled*")

@@ -41,7 +41,6 @@ class Ui_main_window(object):
         self.content_edit.viewport().setProperty("cursor", QtGui.QCursor(QtCore.Qt.IBeamCursor))
         self.content_edit.setMouseTracking(False)
         self.content_edit.setDocumentTitle("")
-        self.content_edit.setPlainText("")
         self.content_edit.setOverwriteMode(False)
         self.content_edit.setBackgroundVisible(False)
         self.content_edit.setObjectName("content_edit")
@@ -150,7 +149,7 @@ class Ui_main_window(object):
     def retranslateUi(self, main_window):
         _translate = QtCore.QCoreApplication.translate
         main_window.setWindowTitle(_translate("main_window", "Inkpad"))
-        self.content_edit.setPlaceholderText(_translate("main_window", "Start Typing...."))
+        self.content_edit.setPlaceholderText(_translate("main_window", "Start Typing..."))
         self.content_tab.setTabText(self.content_tab.indexOf(self.tab), _translate("main_window", "Untitled*"))
         self.menuFile.setTitle(_translate("main_window", "File"))
         self.menuEdit.setTitle(_translate("main_window", "Edit"))
